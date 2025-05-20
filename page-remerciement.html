@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seventeen Ibiza</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <body>
+  <!-- Header -->
+  <header>
+    <h1 data-i18n="site_title">Seventeen Ibiza</h1>
+    <nav>
+      <button onclick="scrollToSection('Accueil')" data-i18n="nav_home">Inicio</button>
+      <button onclick="scrollToSection('menu')" data-i18n="nav_menu">Menú</button>
+      <button onclick="scrollToSection('reservation')" data-i18n="nav_reservation">Reserva</button>
+      <button onclick="scrollToSection('galerie')" data-i18n="nav_gallery">Galería</button>
+      <button onclick="scrollToSection('contact')" data-i18n="nav_contact">Contacto</button>
+      <select onchange="changeLang(this.value)" aria-label="Language selector">
+        <option value="es">Espagnol</option>
+        <option value="en">English</option>
+        <option value="fr">Francais</option>
+        <option value="nl">Nederlands</option>
+        <option value="de">Deutsch</option>
+        <option value="it">Italiano</option>
+      </select>
+    </nav>
+  </header>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: rgba(0,0,0,0.85);
+      border-bottom: 1px solid #444;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 1000;
+    }
+    header h1 {
+      font-weight: 900;
+      font-size: 1.5rem;
+      cursor: default;
+    }
+    nav button, nav select {
+      background: transparent;
+      border: none;
+      color: white;
+      font-weight: 600;
+      margin-left: 1rem;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+    nav button:hover, nav select:hover {
+      color: #aaa;
+    }
+    section {
+      padding: 6rem 2rem 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    #accueil {
+      height: 90vh;
+      background: url('https://source.unsplash.com/1600x900/?restaurant,dining') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    #accueil::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 0;
+    }
+    #accueil > div {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 600px;
+    }
+    #accueil h2 {
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+    }
+    #accueil p {
+      font-size: 1.25rem;
+      font-weight: 400;
+    }
+    h2.section-title {
+      font-size: 2.5rem;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    </style>
+      <section id="accueil">
+    <div>
+      <h2 data-i18n="presentation_title">Seventeen Ibiza</h2>
+      <p data-i18n="presentation_text">Su reserva ha sido registrada con éxito. Le agradecemos su confianza.</p>
+    </div>
+  </section>
