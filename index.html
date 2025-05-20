@@ -167,24 +167,28 @@
 </head>
 <body>
   <!-- Header -->
-  <header>
-    <h1 data-i18n="site_title">Seventeen Ibiza</h1>
-    <nav>
-      <button onclick="scrollToSection('Accueil')" data-i18n="nav_home">Inicio</button>
-      <button onclick="scrollToSection('menu')" data-i18n="nav_menu">Menú</button>
-      <button onclick="scrollToSection('reservation')" data-i18n="nav_reservation">Reserva</button>
-      <button onclick="scrollToSection('galerie')" data-i18n="nav_gallery">Galería</button>
-      <button onclick="scrollToSection('contact')" data-i18n="nav_contact">Contacto</button>
-      <select onchange="changeLang(this.value)" aria-label="Language selector">
-        <option value="es">Espagnol</option>
-        <option value="en">English</option>
-        <option value="fr">Francais</option>
-        <option value="nl">Nederlands</option>
-        <option value="de">Deutsch</option>
-        <option value="it">Italiano</option>
-      </select>
-    </nav>
-  </header>
+<header>
+  <h1 data-i18n="site_title">Seventeen Ibiza</h1>
+  <nav>
+    <button onclick="scrollToSection('Accueil')" data-i18n="nav_home">Inicio</button>
+    <button onclick="scrollToSection('menu')" data-i18n="nav_menu">Menú</button>
+    <button onclick="scrollToSection('reservation')" data-i18n="nav_reservation">Reserva</button>
+    <button onclick="scrollToSection('galerie')" data-i18n="nav_gallery">Galería</button>
+    <button onclick="scrollToSection('contact')" data-i18n="nav_contact">Contacto</button>
+
+    <!-- Sélecteur de langues avec drapeaux -->
+    <label for="language-selector" style="margin-left: 10px;">Idiomas:</label>
+    <select id="language-selector" onchange="changeLang(this.value)" aria-label="Language selector">
+      <option value="es">🇪🇸 Español</option>
+      <option value="en">🇬🇧 English</option>
+      <option value="fr">🇫🇷 Français</option>
+      <option value="nl">🇳🇱 Nederlands</option>
+      <option value="de">🇩🇪 Deutsch</option>
+      <option value="it">🇮🇹 Italiano</option>
+    </select>
+  </nav>
+</header>
+
 
   <!-- Présentation -->
   <section id="accueil">
