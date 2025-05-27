@@ -84,25 +84,78 @@
       margin-bottom: 2rem;
     }
     /* Menu */
-    #menu .menu-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 2rem;
-    }
-    #menu h3 {
-      font-size: 1.3rem;
-      font-weight: 700;
-      border-bottom: 2px solid #555;
-      margin-bottom: 0.8rem;
-    }
-    #menu ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    #menu li {
-      margin-bottom: 0.5rem;
-      font-weight: 500;
-    }
+     .menu-section {
+  margin: 60px auto;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.menu-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 10px;
+}
+
+.menu-info {
+  max-width: 75%;
+}
+
+.menu-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.menu-desc {
+  font-style: italic;
+  color: #555;
+  margin: 5px 0 0 0;
+}
+
+.menu-price {
+  font-weight: bold;
+  color: #000;
+  white-space: nowrap;
+}
+.menu-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 40px auto 20px;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.menu-nav button {
+  background: transparent;
+  border: 1px solid #ccc;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.menu-nav button:hover {
+  background: #f0f0f0;
+  border-color: #999;
+}
     /* Form */
     form {
       max-width: 400px;
@@ -199,40 +252,69 @@
   </section>
 
   <!-- Menu -->
-  <section id="menu">
-    <h2 class="section-title" data-i18n="menu_preview">Nuestro Menú</h2>
+   <div class="menu-nav">
+  <button onclick="scrollToSection('entrantes')" data-i18n="btn_starters">Entrées</button>
+  <button onclick="scrollToSection('bistrot')" data-i18n="btn_mains">Plats principaux</button>
+</div>
+
+<section id="entrantes" class="menu-section">
+  <h2 class="section-title" data-i18n="menu_starters">Entrantes</h2>
+  <div class="menu-grid">
+    <div class="menu-item">
+      <div class="menu-info">
+        <h4 class="menu-title" data-i18n="menu_item1">Bruschetta de tomate</h4>
+        <p class="menu-desc" data-i18n="menu_desc1">albahaca, ajo y rúcula</p>
+      </div>
+      <div class="menu-price">€ 13,50</div>
+    </div>
+
+    <div class="menu-item">
+      <div class="menu-info">
+        <h4 class="menu-title" data-i18n="menu_item2">Vitello Tonnato</h4>
+        <p class="menu-desc" data-i18n="menu_desc2">Lonchas finas de ternera joven en salsa de atún</p>
+      </div>
+      <div class="menu-price">€ 17,90</div>
+    </div>
+
+    <!-- Exemple d’item supplémentaire -->
+    <div class="menu-item">
+      <div class="menu-info">
+        <h4 class="menu-title" data-i18n="menu_item3">Carpaccio de pulpo</h4>
+        <p class="menu-desc" data-i18n="menu_desc3">Finas láminas de pulpo con aceite de oliva y limón</p>
+      </div>
+      <div class="menu-price">€ 15,00</div>
+    </div>
+  </div>
+</section>
+  <section id="bistrot" class="menu-section">
+    <h2 class="section-title" data-i18n="menu_mains">Platos Principales</h2>
     <div class="menu-grid">
-      <div>
-        <h3 data-i18n="menu_starters">Entradas</h3>
-        <ul>
-          <li data-i18n="menu_item1">Carpaccio de ternera</li>
-          <li data-i18n="menu_item2">Crema de calabaza</li>
-        </ul>
+      <div class="menu-item">
+        <div class="menu-info">
+          <h4 class="menu-title" data-i18n="menu_item4">Rissotto de setas</h4>
+          <p class="menu-desc" data-i18n="menu_desc4">Arroz cremoso con setas frescas y parmesano</p>
+        </div>
+        <div class="menu-price">€ 19,50</div>
       </div>
-      <div>
-        <h3 data-i18n="menu_mains">Platos Principales</h3>
-        <ul>
-          <li data-i18n="menu_item3">Filete de lubina & puré de chirivía</li>
-          <li data-i18n="menu_item4">Risotto de champiñones</li>
-        </ul>
+
+      <div class="menu-item">
+        <div class="menu-info">
+          <h4 class="menu-title" data-i18n="menu_item5">Filete de lubina</h4>
+          <p class="menu-desc" data-i18n="menu_desc5">Lubina a la parrilla con puré de chirivía</p>
+        </div>
+        <div class="menu-price">€ 22,00</div>
       </div>
-      <div>
-        <h3 data-i18n="menu_desserts">Postres</h3>
-        <ul>
-          <li data-i18n="menu_item5">Mousse de chocolate</li>
-          <li data-i18n="menu_item6">Tarta de limón merengada</li>
-        </ul>
-      </div>
-      <div>
-        <h3 data-i18n="menu_drinks">Bebidas</h3>
-        <ul>
-          <li data-i18n="menu_item7">Vino tinto de Burdeos</li>
-          <li data-i18n="menu_item8">Mocktails artesanales</li>
-        </ul>
+
+      <!-- Exemple d’item supplémentaire -->
+      <div class="menu-item">
+        <div class="menu-info">
+          <h4 class="menu-title" data-i18n="menu_item6">Pasta fresca al pesto</h4>
+          <p class="menu-desc" data-i18n="menu_desc6">Pasta casera con salsa pesto y piñones</p>
+        </div>
+        <div class="menu-price">€ 16,50</div>
       </div>
     </div>
   </section>
-
   <!-- Réservation -->
   <section id="reservation">
     <h2 class="section-title" data-i18n="reservation_title">Reservar una mesa</h2>
@@ -357,7 +439,22 @@
         contact_title: "Contactez-nous",
         label_message: "Message",
         placeholder_message: "Message",
-        captcha_label: "Je ne suis pas un robot"
+        captcha_label: "Je ne suis pas un robot",
+        menu_starters: "Entrées",
+        menu_item1: "Bruschetta de tomate",
+        menu_desc1: "tomate, basilic, ail et roquette",
+        menu_item2: "Vitello Tonnato",
+        menu_desc2: "Fines tranches de veau jeune avec sauce au thon",
+        menu_item3: "Carpaccio de poulpe",
+        menu_desc3: "Fines tranches de poulpe avec huile d'olive et citron",
+        menu_mains: "Plats Principaux",
+        menu_item4: "Risotto aux champignons",
+        menu_desc4: "Riz crémeux aux champignons frais et parmesan",
+        menu_item5: "Filet de bar",
+        menu_desc5: "Bar grillé avec purée de panais",
+        menu_item6: "Pâtes fraîches au pesto",
+        menu_desc6: "Pâtes maison avec sauce pesto et pignons de pin",
+
       },
       en: {
         site_title: "Bistrò 17 Santa Eulalia",
@@ -450,7 +547,22 @@
     contact_title: "Contáctanos",
     label_message: "Mensaje",
     placeholder_message: "Mensaje",
-    captcha_label: "No soy un robot"
+    captcha_label: "No soy un robot",
+          
+      menu_starters: "Entrantes",
+  menu_item1: "Bruschetta de tomate",
+  menu_desc1: "albahaca, ajo y rúcula",
+  menu_item2: "Vitello Tonnato",
+  menu_desc2: "Lonchas finas de ternera joven en salsa de atún",
+  menu_item3: "Carpaccio de pulpo",
+  menu_desc3: "Finas láminas de pulpo con aceite de oliva y limón",
+    menu_mains: "Platos Principales",
+  menu_item4: "Rissotto de setas",
+  menu_desc4: "Arroz cremoso con setas frescas y parmesano",
+  menu_item5: "Filete de lubina",
+  menu_desc5: "Lubina a la parrilla con puré de chirivía",
+  menu_item6: "Pasta fresca al pesto",
+  menu_desc6: "Pasta casera con salsa pesto y piñones",
   },
    nl: {
             site_title: "Bistrò 17 Santa Eulalia",
