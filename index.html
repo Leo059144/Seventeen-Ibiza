@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bistrò 17 Santa Eulalia</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <style>
       body {
         background-color: #000;
@@ -14,20 +15,21 @@
         margin: 0;
         padding: 0;
       }
-      header {
-         header {
-      position: absolute;
+          header {
+      position: fixed;
       top: 0;
       width: 100%;
-      padding: 20px;
-      z-index: 2;
-      background: rgba(0, 0, 0, 0.4); /* Transparence noire */
+      z-index: 10;
+      background: rgba(0, 0, 0, 0.4); /* transparence */
       color: white;
-      text-align: center;
-      font-size: 1.5rem;
-      backdrop-filter: blur(5px); /* Effet flou derrière */
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(10px);
     }
-      }
+  
+      
       header h1 {
         font-weight: 900;
         font-size: 1.5rem;
@@ -282,41 +284,35 @@
         cursor: pointer;
       }
       
-    .slider-container {
+    
+
+    .swiper {
+      height: 100vh;
+    }
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
       position: relative;
-      width: 100%;
-      height: 60vh; /* Seulement en haut de la page */
-      overflow: hidden;
-      z-index: 1;
     }
 
-    .slider {
-      display: flex;
-      width: 400%; /* 4 images => 400% */
-      height: 100%;
-      animation: slide 12s infinite;
-    }
-
-    .slider img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    @keyframes slide {
-      0% { transform: translateX(0); }
-      25% { transform: translateX(0); }
-      30% { transform: translateX(-100%); }
-      50% { transform: translateX(-100%); }
-      55% { transform: translateX(-200%); }
-      75% { transform: translateX(-200%); }
-      80% { transform: translateX(-300%); }
-      100% { transform: translateX(-300%); }
-    }
-
-    .content {
-      padding: 2rem;
+    .slide-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
       text-align: center;
+    }
+
+    .slide-content h1 {
+      font-size: 4rem;
+      letter-spacing: 2px;
+    }
+
+    .slide-content p {
+      font-size: 1.5rem;
+      margin-top: 1rem;
     }
 
     /* Contenu de la page au-dessus du slideshow */
@@ -333,13 +329,28 @@
     </style>
   </head>
   <body>
-        <div class="slider-container">
-    <div class="slider">
-      <img src="salade.JPG" alt="Salade">
-      <img src="ravioles.JPG" alt="Ravioles">
-      <img src="Tiramisu-cafe.JPG" alt="Tiramisu café">
-      <img src="viande.JPG" alt="Viande">
+ <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image: url('salade.JPG')">
+        <div class="slide-content">
+          <p>Food is</p>
+          <h1>ART</h1>
+          <p>combined with TASTE...</p>
+        </div>
+      </div>
+      <div class="swiper-slide" style="background-image: url('ravioles.JPG')">
+        <div class="slide-content"></div>
+      </div>
+      <div class="swiper-slide" style="background-image: url('viande.JPG')">
+        <div class="slide-content"></div>
+      </div>
+      <div class="swiper-slide" style="background-image: url('Tiramisu-cafe.JPG')">
+        <div class="slide-content"></div>
+      </div>
     </div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
   </div>
     <!-- Header -->
   <header>
@@ -1184,4 +1195,20 @@
       }
       
     </style>
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      effect: 'fade',
+      speed: 1000,
+    });
+  </script>
     
