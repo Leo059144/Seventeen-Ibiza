@@ -15,15 +15,18 @@
         padding: 0;
       }
       header {
-        position: fixed;
-        top: 0; left: 0; right: 0;
-        background: rgba(0,0,0,0.85);
-        border-bottom: 1px solid #444;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;
-        z-index: 1000;
+         header {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      padding: 20px;
+      z-index: 2;
+      background: rgba(0, 0, 0, 0.4); /* Transparence noire */
+      color: white;
+      text-align: center;
+      font-size: 1.5rem;
+      backdrop-filter: blur(5px); /* Effet flou derrière */
+    }
       }
       header h1 {
         font-weight: 900;
@@ -278,25 +281,42 @@
         height: 18px;
         cursor: pointer;
       }
-      .slideshow {
-      position: fixed;
+      
+    .slider-container {
+      position: relative;
       width: 100%;
-      height: 100%;
-      z-index: -1;
+      height: 60vh; /* Seulement en haut de la page */
+      overflow: hidden;
+      z-index: 1;
     }
 
-    .slide {
-      position: absolute;
-      width: 100%;
+    .slider {
+      display: flex;
+      width: 400%; /* 4 images => 400% */
       height: 100%;
-      background-size: cover;
-      background-position: center;
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
+      animation: slide 12s infinite;
     }
 
-    .slide.active {
-      opacity: 1;
+    .slider img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(0); }
+      30% { transform: translateX(-100%); }
+      50% { transform: translateX(-100%); }
+      55% { transform: translateX(-200%); }
+      75% { transform: translateX(-200%); }
+      80% { transform: translateX(-300%); }
+      100% { transform: translateX(-300%); }
+    }
+
+    .content {
+      padding: 2rem;
+      text-align: center;
     }
 
     /* Contenu de la page au-dessus du slideshow */
@@ -313,11 +333,13 @@
     </style>
   </head>
   <body>
-      <div class="slideshow">
-    <div class="slide active" style="background-image: url('salade.JPG');" alt="rien"></div>
-    <div class="slide" style="background-image: url('ravioles.JPG');"></div>
-    <div class="slide" style="background-image: url('Tiramisu-cafe.JPG');"></div>
-    <div class="slide" style="background-image: url('viande.JPG');"></div>
+        <div class="slider-container">
+    <div class="slider">
+      <img src="salade.JPG" alt="Salade">
+      <img src="ravioles.JPG" alt="Ravioles">
+      <img src="Tiramisu-cafe.JPG" alt="Tiramisu café">
+      <img src="viande.JPG" alt="Viande">
+    </div>
   </div>
     <!-- Header -->
   <header>
