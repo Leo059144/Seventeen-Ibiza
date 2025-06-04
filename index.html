@@ -99,6 +99,9 @@
         font-size: 3rem;
         font-weight: 900;
         margin-bottom: 1rem;
+        white-space: nowrap; /* une seule ligne */
+  overflow: hidden;
+  text-overflow: ellipsis; /* coupe proprement si trop long */
       }
       #accueil p {
         font-size: 1.25rem;
@@ -448,7 +451,7 @@
 
 
     <!-- Présentation -->
-    <section id="Accueil12">
+    <section id="Accueil">
       <div>
         <h1 data-i18n="presentation_title">Bienvenidos a Bistrò 17 Santa Eulalia</h1>
         <p data-i18n="presentation_text">Una experiencia gastronómica única en un entorno elegante y contemporáneo.</p>
