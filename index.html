@@ -8,13 +8,16 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
       body {
         background-color: #000;
         color: #fff;
-        font-family: 'Arial', sans-serif;
+         font-family: 'Cormorant Garamond', serif;
         margin: 0;
         padding: 0;
+        
         
       }
           header {
@@ -129,7 +132,7 @@
 
   .menu-desc {
     font-style: italic;
-    color: #555;
+    color: #D3D3D3;
     margin: 5px 0 0 0;
   }
 
@@ -259,7 +262,7 @@
   cursor: pointer;
 }
 .nom-restaurant {
-  font-family: "Dancing Script", cursive;
+  font-family: "Dancing Script", serif;
 }
 
 /* Responsive */
@@ -402,10 +405,12 @@
 
     <!-- Menu -->
     <div class="menu-nav">
-    <button onclick="scrollToSection('entrantes')" data-i18n="btn_starters">Entrées</button>
+    <button onclick="scrollToSection('entrantes')" data-i18n="btn_starters">Entrantes</button>
     <button onclick="scrollToSection('bistrot')" data-i18n="btn_mains">Special Bistrot</button>
     <button onclick="scrollToSection('pasta')" data-i18n="btn_pasta">Pasta Casera</button>  
     <button onclick="scrollToSection('segundos')" data-i18n="btn_segundos">Segundos Platos</button>
+    <button onclick="scrollToSection('pizze-bianche')" data-i18n="btn_bianche">Pizze Bianche</button>
+    <button onclick="scrollToSection('pizze-rosse')" data-i18n="btn_rosse">Pizze Rosse</button>
   </div>
 
   <section id="entrantes" class="menu-section">
@@ -462,6 +467,7 @@
           </div>
           <div class="menu-price"></div>
         </div>
+        </section>
          <section id="pasta" class="menu-section">
       <h2 class="section-title" data-i18n="menu_pasta">Pasta Casera</h2>
       <div class="menu-grid">
@@ -502,6 +508,7 @@
           </div>
           <div class="menu-price"></div>
         </div>
+        </section>
             <section id="segundos" class="menu-section">
       <h2 class="section-title" data-i18n="menu_segundos">Segundos Platos</h2>
       <div class="menu-grid">
@@ -516,7 +523,7 @@
         <div class="menu-item">
           <div class="menu-info">
             <h4 class="menu-title" data-i18n="menu_item13">Filete de lubina salvaje allá ligure  - 31.50€</h4>
-            <p class="menu-desc" data-i18n="menu_desc13">(aceintunas taggiasche,tomates Cherry y patatas)</p>
+            <p class="menu-desc" data-i18n="menu_desc13">aceintunas taggiasche,tomates Cherry y patatas</p>
           </div>
           <div class="menu-price"></div>
         </div>
@@ -531,10 +538,245 @@
             <div class="menu-item">
           <div class="menu-info">
             <h4 class="menu-title" data-i18n="menu_item15">Entreña a la parilla con chalotas a la francesa ,servido con patatas al horno y verduras  - 24.50€</h4>
-            <p class="menu-desc" data-i18n="menu_desc15"></p>
+            <p class="menu-desc" data-i18n="menu_desc15"></p> 
           </div>
           <div class="menu-price"></div>
         </div>
+        </section>
+        *<!-- PIZZE BIANCHE -->
+    
+      <section id="pizze-bianche" class="menu-section">
+      <h2 class="section-title" data-i18n="menu_bianche">Pizze Bianche</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item16">Pan de ajo - 10.00€</h4>
+            <p class="menu-desc" data-i18n="menu_desc16">ajo-mozzarella-orégano</p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item17"> 4 Formaggi - 13.00€</h4>
+            <p class="menu-desc" data-i18n="menu_desc17"> 4 quesós mozzarella-cabra-gorgonzola-parmesano-perejil</p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item18">Popay - 13.00€  </h4>
+            <p class="menu-desc" data-i18n="menu_desc18">mozarella-espinacas-ricotta </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+            <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item19">La Bianca - 13.50€ </h4>
+            <p class="menu-desc" data-i18n="menu_desc19">mozzarella de búfala-tomate Cherry-albahaca </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+           <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item20">Delicata - 15.00€  </h4>
+            <p class="menu-desc" data-i18n="menu_desc20">mozarella-jamon york-alcachofas-cebolleta-rúcula-parmesano</p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+             <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item21">Sempreverde - 15.00€</h4>
+            <p class="menu-desc" data-i18n="menu_desc21">mozzarella-crema de pistachos-cebolleta-speck </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+           <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item22">Trufa - 19.50€</h4>
+            <p class="menu-desc" data-i18n="menu_desc22">mozzarella-crema de trufa-parmesano-speck  </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+           <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item23">Estate - 16.00€</h4>
+            <p class="menu-desc" data-i18n="menu_desc23">mozzarella de búfala- tomate Cherry – calabacin-pesto-aceite de albahaca  </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+           <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item24">Barbarella  - 14.50€</h4>
+            <p class="menu-desc" data-i18n="menu_desc24">mozzarella-ricotta-salami picante-parmesano-cáscara de limón-cebolleta-salvia  </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+          <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item25">Zest- 14.00€</h4>
+            <p class="menu-desc" data-i18n="menu_desc25">mozzarella-ricotta-salami picante-parmesano-cáscara de limón-cebolleta-salvia  </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+        </section>
+        *<!-- PIZZE ROSSE -->
+        <section id="pizze-rosse" class="menu-section">
+      <h2 class="section-title" data-i18n="menu_rosse">Pizze Rosse</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item26">Pan de ajo - 10.00€</h4>
+            <p class="menu-desc" data-i18n="menu_desc26">tomate y ajo</p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item27"> Marinara – 9.50€</h4>
+            <p class="menu-desc" data-i18n="menu_desc27">Tomate anchoas-aceitunas negras -alcaparras -orégano</p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item28">Margherita – 10.50€    </h4>
+            <p class="menu-desc" data-i18n="menu_desc28">tomate-mozzarella-albahaca </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+            <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item29">Margherita Verdadera – 13.50€ </h4>
+            <p class="menu-desc" data-i18n="menu_desc29">tomate-mozzarella de búfala-albahaca </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+           <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item30">Siciliana – 12.00€  </h4>
+            <p class="menu-desc" data-i18n="menu_desc30">tomate-mozzarella-anchoas-anchoas-alcaparras-aceitunas negras-oregano</p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+             <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item31">Diavola – 12.00€ </h4>
+            <p class="menu-desc" data-i18n="menu_desc31">tomate-mozzarella-salami picante </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+           <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item32">Prosciutto Cotto – 12.00€ </h4>
+            <p class="menu-desc" data-i18n="menu_desc32">tomate-mozz-jamon  </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+           <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item33">Ortolana – 13.00€</h4>
+            <p class="menu-desc" data-i18n="menu_desc33"> tomate-mozzarella-vegetales de la temporada  </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+           <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item34">Capricciosa– 14.00€</h4>
+            <p class="menu-desc" data-i18n="menu_desc34">tomate-mozzarella-jamon-aceitunas negras-champiñones-anchoas-huevo-perefil  </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+          <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item35">4 Estaciones – 14.00€</h4>
+            <p class="menu-desc" data-i18n="menu_desc35"> tomate-mozzarella-jamón-champiñones-alcachofa-aceitunas negras  </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+           <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item36">Calzone – 12.00€</h4>
+            <p class="menu-desc" data-i18n="menu_desc36"> tomate-mozzarella-jamón  </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+           <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item37">Calzone Vegetariano – 13.50€</h4>
+            <p class="menu-desc" data-i18n="menu_desc37"> tomate – mozzarella-espinaca-ricotta	   </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+           <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item38">Calzone Farcido– 13.50€ </h4>
+            <p class="menu-desc" data-i18n="menu_desc38"> tomate-mozzarella-jamón-champiñones-alcachofa  </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+           <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item39">Disco Volante – 14.00€</h4>
+            <p class="menu-desc" data-i18n="menu_desc39">tomate-mozzarella-jamón-salami picante-champiñones  </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+           <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item40">Parma – 15.00€ </h4>
+            <p class="menu-desc" data-i18n="menu_desc40">tomate-mozzarella-jamón de parma-rúcúla-parmesano </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+           <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item41">Tonno e Cipolle– 12.50€</h4>
+            <p class="menu-desc" data-i18n="menu_desc41"> tomate-mozzarella-atún-cebolla-perejil  </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+           <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item42">Frutti di Mare– 17.00€ </h4>
+            <p class="menu-desc" data-i18n="menu_desc42"> tomate-mozzarella-frutos del mar-perejil  </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+           <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item43">Jacluska– 13.40€ </h4>
+            <p class="menu-desc" data-i18n="menu_desc43"> tomate-mozzarella-jamón-champiñones-piña  </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+           <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item44">La Parmigiana– 14.00€</h4>
+            <p class="menu-desc" data-i18n="menu_desc44"> tomate-mozzarella de búfula-berenjena-parmesano-albahaca  </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+           <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item45">La Vegana– 15.00€ </h4>
+            <p class="menu-desc" data-i18n="menu_desc45"> queso vegano-tomate-berenjena-espinacas-cebolla-tomates Cherry </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+           <div class="menu-item">
+          <div class="menu-info">
+            <h4 class="menu-title" data-i18n="menu_item46">Indiavolata – 14.90€ </h4>
+            <p class="menu-desc" data-i18n="menu_desc46"> tomate-mozzarella-salami picante-pimientos asados-cebolla-aceitunas </p>
+          </div>
+          <div class="menu-price"></div>
+        </div>
+        </section>
+      
+      
       
 
         <!-- Exemple d’item supplémentaire -->
@@ -712,7 +954,7 @@
           menu_item12: "Crevettes gratinées, servies avec une mayonnaise au wasabi - 28,90€",
           menu_desc12: "",
           menu_item13: "Filet de bar sauvage alla Ligure - 31,50€",
-          menu_desc13: "(Olives taggiasche, tomates cerises et pommes de terre)",
+          menu_desc13: "(Olives taggiasche, tomates cerises et pommes de terre",
           menu_item14: "Boeuf mijoté au vin rouge servi avec des pappardelle maison - 25,00€",
           menu_desc14: "",
           menu_item15: "Entrecôte grillée avec échalotes françaises, servie avec pommes de terre au four et légumes - 24,50€",
@@ -720,7 +962,75 @@
           btn_entrantes: "Entrées",
           btn_pasta: "Pasta Maison",
           btn_segundos: "Plats Principaux",
+          btn_mains: "Bistrot Specials",
           menu_pasta: "Pasta Maison",
+          btn_starters: "Entrées",
+          btn_bianche: "Pizze Bianche",
+          btn_rosse: "Pizze Rosse",
+          menu_item16: "Pain à l'ail - 10,00€",
+          menu_desc16: "Ail-Mozzarella-Origan",
+          menu_item17: "4 Fromages - 13,00€",
+          menu_desc17: "4 fromages Mozzarella-Chèvre-Gorgonzola-Parmesan-Persil",
+          menu_item18: "Popay - 13,00€",
+          menu_desc18: "Mozzarella-Épinards-Ricotta",
+          menu_item19: "La Bianca - 13,50€",
+          menu_desc19: "Mozzarella de bufflonne-Tomates cerises-Basilic",
+          menu_item20: "Delicata - 15,00€",
+          menu_desc20: "Mozzarella-Jambon de York-Artichauts-Oignons-Roquette-Parmesan",
+          menu_item21: "Sempreverde - 15,00€",
+          menu_desc21: "Mozzarella-Crème de pistache-Oignons-Speck",
+          menu_item22: "Trufa - 19,50€",
+          menu_desc22: "Mozzarella-Crème de truffe-Parmesan-Speck",
+          menu_item23: "Estate - 16,00€",
+          menu_desc23: "Mozzarella de bufflonne-Tomates cerises-Courgette-Pesto-Huile de basilic",
+          menu_item24: "Barbarella - 14,50€",
+          menu_desc24: "Mozzarella-Ricotta-Salami piquant-Parmesan-Zeste de citron-Oignons-Sauge",
+          menu_item25: "Zest - 14,00€",
+          menu_desc25: "Mozzarella-Ricotta-Salami piquant-Parmesan-Zeste de citron-Oignons-Sauge",
+          menu_item26: "Pain à l'ail - 10,00€",
+          menu_desc26: "Tomate et Ail",
+          menu_item27: "Marinara - 9,50€",
+          menu_desc27: "Tomate-Anchois-Olives noires-Câpres-Origan",
+          menu_item28: "Margherita - 10,50€",
+          menu_desc28: "Tomate-Mozzarella-Basilic",
+          menu_item29: "Margherita Vraie - 13,50€",
+          menu_desc29: "Tomate-Mozzarella de bufflonne-Basilic",
+          menu_item30: "Siciliana - 12,00€",
+          menu_desc30: "Tomate-Mozzarella-Anchois-Anchois-Câpres-Olives noires-Origan",
+          menu_item31: "Diavola - 12,00€",
+          menu_desc31: "Tomate-Mozzarella-Salami piquant",
+          menu_item32: "Prosciutto Cotto - 12,00€",
+          menu_desc32: "Tomate-Mozzarella-Jambon",
+          menu_item33: "Ortolana - 13,00€",
+          menu_desc33: "Tomate-Mozzarella-Légumes de saison",
+          menu_item34: "Capricciosa - 14,00€",
+          menu_desc34: "Tomate-Mozzarella-Jambon-Olives noires-Champignons-Anchois-Oeuf-Persil",
+          menu_item35: "4 Stagioni - 14,00€",
+          menu_desc35: "Tomate-Mozzarella-Jambon-Champignons-Artichauts-Olives noires",
+          menu_item36: "Calzone - 12,00€",
+          menu_desc36: "Tomate-Mozzarella-Jambon",
+          menu_item37: "Calzone Vegetariano - 13,50€",
+          menu_desc37: "Tomate-Mozzarella-Épinards-Ricotta",
+          menu_item38: "Calzone Farcido - 13,50€",
+          menu_desc38: "Tomate-Mozzarella-Jambon-Champignons-Artichauts",
+          menu_item39: "Disco Volante - 14,00€",
+          menu_desc39: "Tomate-Mozzarella-Jambon-Salami piquant-Champignons",
+          menu_item40: "Parma - 15,00€",
+          menu_desc40: "Tomate-Mozzarella-Jambon de Parme-Roquette-Parmesan",
+          menu_item41: "Tonno e Cipolle - 12,50€",
+          menu_desc41: "Tomate-Mozzarella-Thon-Oignons-Persil",
+          menu_item42: "Frutti di Mare - 17,00€",
+          menu_desc42: "Tomate-Mozzarella-Fruits de mer-Persil",
+          menu_item43: "Jacluska - 13,40€",
+          menu_desc43: "Tomate-Mozzarella-Jambon-Champignons-Ananas",
+          menu_item44: "La Parmigiana - 14,00€",
+          menu_desc44: "Tomate-Mozzarella de bufflonne-Aubergine-Parmesan-Basilic",
+          menu_item45: "La Vegana - 15,00€",
+          menu_desc45: "Fromage vegan-Tomate-Aubergine-Épinards-Oignons-Tomates cerises",
+          menu_item46: "Indiavolata - 14,90€",
+          menu_desc46: "Tomate-Mozzarella-Salami piquant-Piments rôtis-Oignons-Olives",
+
+
 
 
 
@@ -797,7 +1107,7 @@
           menu_item12: "Gratinated Prawns served with Wasabi Mayonnaise - €28.90",
           menu_desc12: "",
           menu_item13: "Wild Sea Bass alla Ligure - €31.50",
-          menu_desc13: "(Taggiasca olives, cherry tomatoes, and potatoes)",
+          menu_desc13: "Taggiasca olives, cherry tomatoes, and potatoes",
           menu_item14: "Beef Stew in Red Wine served with Homemade Pappardelle - €25.00",
           menu_desc14: "",
           menu_item15: "Grilled Skirt Steak with French Shallots, served with Baked Potatoes and Vegetables - €24.50",
@@ -806,6 +1116,73 @@
           btn_pasta: "Homemade Pasta",
           btn_segundos: "Main Courses",
           menu_pasta: "Homemade Pasta",
+          btn_mains: "Bistrot Specials",
+          btn_starters: "Starters",
+          btn_bianche: "Pizza Bianche",
+          btn_rosse: "Pizza Rosse",
+          menu_item16: "Garlic Bread - €10.00",
+          menu_desc16: "Garlic-Mozzarella-Oregano",
+          menu_item17: "4 Cheeses - €13.00",
+          menu_desc17: "4 Cheeses Mozzarella-Goat Cheese-Gorgonzola-Parmesan-Parsley",
+          menu_item18: "Popay - €13.00",
+          menu_desc18: "Mozzarella-Spinach-Ricotta",
+          menu_item19: "The Bianca - €13.50",
+          menu_desc19: "Buffalo Mozzarella-Cherry Tomatoes-Basil",
+          menu_item20: "Delicata - €15.00",
+          menu_desc20: "Mozzarella-Ham-Artichokes-Onions-Arugula-Parmesan",
+          menu_item21: "Sempreverde - €15.00",
+          menu_desc21: "Mozzarella-Pistachio Cream-Onions-Speck",
+          menu_item22: "Trufa - €19.50",
+          menu_desc22: "Mozzarella-Truffle Cream-Parmesan-Speck",
+          menu_item23: "Estate - €16.00",
+          menu_desc23: "Buffalo Mozzarella-Cherry Tomatoes-Zucchini-Pesto-Basil Oil",
+          menu_item24: "Barbarella - €14.50",
+          menu_desc24: "Mozzarella-Ricotta-Spicy Salami-Parmesan-Lemon Zest-Onions-Sage",
+          menu_item25: "Zest - €14.00",
+          menu_desc25: "Mozzarella-Ricotta-Spicy Salami-Parmesan-Lemon Zest-Onions-Sage",
+          menu_item26: "Garlic Bread - €10.00",
+          menu_desc26: "Tomato and Garlic",
+          menu_item27: "Marinara - €9.50",
+          menu_desc27: "Tomato-Anchovies-Black Olives-Capers-Oregano",
+          menu_item28: "Margherita - €10.50",
+          menu_desc28: "Tomato-Mozzarella-Basil",
+          menu_item29: "True Margherita - €13.50",
+          menu_desc29: "Tomato-Buffalo Mozzarella-Basil",
+          menu_item30: "Siciliana - €12.00",
+          menu_desc30: "Tomato-Mozzarella-Anchovies-Capers-Black Olives-Oregano",
+          menu_item31: "Diavola - €12.00",
+          menu_desc31: "Tomato-Mozzarella-Spicy Salami",
+          menu_item32: "Prosciutto Cotto - €12.00",
+          menu_desc32: "Tomato-Mozzarella-Ham",
+          menu_item33: "Ortolana - €13.00",
+          menu_desc33: "Tomato-Mozzarella-Seasonal Vegetables",
+          menu_item34: "Capricciosa - €14.00",
+          menu_desc34: "Tomato-Mozzarella-Ham-Black Olives-Mushrooms-Anchovies-Egg-Parsley",
+          menu_item35: "4 Stagioni - €14.00",
+          menu_desc35: "Tomato-Mozzarella-Ham-Mushrooms-Artichokes-Black Olives",
+          menu_item36: "Calzone - €12.00",
+          menu_desc36: "Tomato-Mozzarella-Ham",
+          menu_item37: "Calzone Vegetariano - €13.50",
+          menu_desc37: "Tomato-Mozzarella-Spinach-Ricotta",
+          menu_item38: "Calzone Farcido - €13.50",
+          menu_desc38: "Tomato-Mozzarella-Ham-Mushrooms-Artichokes",
+          menu_item39: "Disco Volante - €14.00",
+          menu_desc39: "Tomato-Mozzarella-Ham-Spicy Salami-Mushrooms",
+          menu_item40: "Parma - €15.00",
+          menu_desc40: "Tomato-Mozzarella-Parma Ham-Arugula-Parmesan",
+          menu_item41: "Tonno e Cipolle - €12.50",
+          menu_desc41: "Tomato-Mozzarella-Tuna-Onions-Parsley",
+          menu_item42: "Frutti di Mare - €17.00",
+          menu_desc42: "Tomato-Mozzarella-Seafood-Parsley",
+          menu_item43: "Jacluska - €13.40",
+          menu_desc43: "Tomato-Mozzarella-Ham-Mushrooms-Pineapple",
+          menu_item44: "La Parmigiana - €14.00",
+          menu_desc44: "Tomato-Buffalo Mozzarella-Eggplant-Parmesan-Basil",
+          menu_item45: "La Vegana - €15.00",
+          menu_desc45: "Vegan Cheese-Tomato-Eggplant-Spinach-Onions-Cherry Tomatoes",
+          menu_item46: "Indiavolata - €14.90",
+          menu_desc46: "Tomato-Mozzarella-Spicy Salami-Roasted Peppers-Onions-Olives",
+
 
 
       
@@ -887,13 +1264,81 @@
     menu_item12: "Langostinos gratinados,servidos con una mayonesa de wasabi - 28.90€",
     menu_desc12: "",
     menu_item13: "Filete de lubina salvaje allá ligure - 31.50€",
-    menu_desc13: "(aceitunas taggiasche, tomates Cherry y patatas)",
+    menu_desc13: "aceitunas taggiasche, tomates Cherry y patatas",
     menu_item14: "Estofado de ternera al vino tinto servido con Pappardelle casera - 25.00€",
     menu_desc14: "",
     menu_item15: "Entreña a la parilla con chalotas a la francesa, servido con patatas al horno y verduras - 24.50€",
     menu_desc15: "",
     menu_pasta: "Pasta Casera",
-    
+    btn_entrantes: "Entradas",
+    btn_mains: "Bistrot Specials",
+    btn_pasta: "Pasta Casera",
+    btn_segundos: "Segundos Platos",
+    btn_starters: "Entradas",
+    btn_bianche: "Pizzas Bianche",
+    btn_rosse: "Pizzas Rosse",
+    menu_item16: "Pan de ajo - 10.00€",
+    menu_desc16: "Ajo-Mozzarella-Orégano",
+    menu_item17: "4 Quesos - 13.00€",
+    menu_desc17: "4 Quesos Mozzarella-Queso de Cabra-Gorgonzola-Parmesano-Perejil",
+    menu_item18: "Popay - 13.00€",
+    menu_desc18: "Mozzarella-Espinacas-Ricota",
+    menu_item19: "La Bianca - 13.50€",
+    menu_desc19: "Mozzarella de búfala-Tomates Cherry-Albahaca",
+    menu_item20: "Delicata - 15.00€",
+    menu_desc20: "Mozzarella-Jamón de York-Alcachofas-Cebolla-Rúcula-Parmesano",
+    menu_item21: "Sempreverde - 15.00€",
+    menu_desc21: "Mozzarella-Crema de Pistacho-Cebolla-Speck",
+    menu_item22: "Trufa - 19.50€",
+    menu_desc22: "Mozzarella-Crema de Trufa-Parmesano-Speck",
+    menu_item23: "Estate - 16.00€",
+    menu_desc23: "Mozzarella de búfala-Tomates Cherry-Calabacín-Pesto-Aceite de Albahaca",
+    menu_item24: "Barbarella - 14.50€",
+    menu_desc24: "Mozzarella-Ricotta-Salami Picante-Parmesano-Ralladura de Limón-Cebolla-Salvia",
+    menu_item25: "Zest - 14.00€",
+    menu_desc25: "Mozzarella-Ricotta-Salami Picante-Parmesano-Ralladura de Limón-Cebolla-Salvia",
+    menu_item26: "Pan de ajo - 10.00€",
+    menu_desc26: "Tomate y Ajo",
+    menu_item27: "Marinara - 9.50€",
+    menu_desc27: "Tomate-Anchoas-Olivas Negras-Alcaparras-Orégano",
+    menu_item28: "Margherita - 10.50€",
+    menu_desc28: "Tomate-Mozzarella-Albahaca",
+    menu_item29: "Margherita Verdadera - 13.50€",
+    menu_desc29: "Tomate-Mozzarella de búfala-Albahaca",
+    menu_item30: "Siciliana - 12.00€",
+    menu_desc30: "Tomate-Mozzarella-Anchoas-Alcaparras-Olivas Negras-Orégano",
+    menu_item31: "Diavola - 12.00€",
+    menu_desc31: "Tomate-Mozzarella-Salami Picante",
+    menu_item32: "Prosciutto Cotto - 12.00€",
+    menu_desc32: "Tomate-Mozzarella-Jamón",
+    menu_item33: "Ortolana - 13.00€",
+    menu_desc33: "Tomate-Mozzarella-Verduras de temporada",
+    menu_item34: "Capricciosa - 14.00€",
+    menu_desc34: "Tomate-Mozzarella-Jamón-Olivas Negras-Champiñones-Anchoas-Huevo-Perejil",
+    menu_item35: "4 Estaciones - 14.00€",
+    menu_desc35: "Tomate-Mozzarella-Jamón-Champiñones-Alcachofas-Olivas Negras",
+    menu_item36: "Calzone - 12.00€",
+    menu_desc36: "Tomate-Mozzarella-Jamón",
+    menu_item37: "Calzone Vegetariano - 13.50€",
+    menu_desc37: "Tomate-Mozzarella-Espinacas-Ricota",
+    menu_item38: "Calzone Farcido - 13.50€",
+    menu_desc38: "Tomate-Mozzarella-Jamón-Champiñones-Alcachofas",
+    menu_item39: "Disco Volante - 14.00€",
+    menu_desc39: "Tomate-Mozzarella-Jamón-Salami Picante-Champiñones",
+    menu_item40: "Parma - 15.00€",
+    menu_desc40: "Tomate-Mozzarella-Jamón de Parma-Rúcula-Parmesano",
+    menu_item41: "Tonno e Cipolle - 12.50€",
+    menu_desc41: "Tomate-Mozzarella-Atún-Cebolla-Perejil",
+    menu_item42: "Frutti di Mare - 17.00€",
+    menu_desc42: "Tomate-Mozzarella-Frutos del Mar-Perejil",
+    menu_item43: "Jacluska - 13.40€",
+    menu_desc43: "Tomate-Mozzarella-Jamón-Champiñones-Ananá",
+    menu_item44: "La Parmigiana - 14.00€",
+    menu_desc44: "Tomate-Mozzarella de búfala-Berenjena-Parmesano-Albahaca",
+    menu_item45: "La Vegana - 15.00€",
+    menu_desc45: "Queso vegano-Tomate-Berenjena-Espinacas-Cebolla-Tomates Cherry",
+    menu_item46: "Indiavolata - 14.90€",
+    menu_desc46: "Tomate-Mozzarella-Salami Picante-Pimientos Asados-Cebolla-Olivas",
 
 
     
@@ -971,7 +1416,7 @@
       menu_item12: "Gegratineerde garnalen, geserveerd met wasabi-mayonaise - €28,90",
       menu_desc12: "",
       menu_item13: "Filet van wilde zeebaars alla ligure - €31,50",
-      menu_desc13: "(taggiasche olijven, cherrytomaten en aardappelen)",
+      menu_desc13: "taggiasche olijven, cherrytomaten en aardappelen",
       menu_item14: "Runderstoofpot in rode wijn geserveerd met huisgemaakte pappardelle - €25,00",
       menu_desc14: "",
       menu_item15: "Gegrilde entrecôte met Franse sjalotten, geserveerd met gebakken aardappelen en groenten - €24,50",
@@ -980,6 +1425,72 @@
       btn_pasta: "Huisgemaakte Pasta",
       btn_segundos: "Hoofdgerechten",
       menu_pasta: "Huisgemaakte Pasta",
+      btn_mains: "Bistrot Specials",
+      btn_starters: "Voorgerechten",
+      btn_bianche: "Pizza Bianche",
+      btn_rosse: "Pizza Rosse",
+      menu_item16: "Knoflookbrood - €10,00",
+      menu_desc16: "Knoflook-Mozzarella-Oregano",
+      menu_item17: "4 Kazen - €13,00",
+      menu_desc17: "4 kazen Mozzarella-Geitenkaas-Gorgonzola-Parmezaan-Peterselie",
+      menu_item18: "Popay - €13,00",
+      menu_desc18: "Mozzarella-Spinazie-Ricotta",
+      menu_item19: "De Bianca - €13,50",
+      menu_desc19: "Buffelmozzarella-Cherrytomaten-Basilicum",
+      menu_item20: "Delicata - €15,00",
+      menu_desc20: "Mozzarella-Ham-Artisjokken-Uien-Rucola-Parmezaan",
+      menu_item21: "Sempreverde - €15,00",
+      menu_desc21: "Mozzarella-Pistachecrème-Uien-Speck",
+      menu_item22: "Trufa - €19,50",
+      menu_desc22: "Mozzarella-Truffelcrème-Parmezaan-Speck",
+      menu_item23: "Estate - €16,00",
+      menu_desc23: "Buffelmozzarella-Cherrytomaten-Zucchini-Pesto-Basilicumolie",
+      menu_item24: "Barbarella - €14,50",
+      menu_desc24: "Mozzarella-Ricotta-Pittige Salami-Parmezaan-Citroenrasp-Uien-Salie",
+      menu_item25: "Zest - €14,00",
+      menu_desc25: "Mozzarella-Ricotta-Pittige Salami-Parmezaan-Citroenrasp-Uien-Salie",
+      menu_item26: "Knoflookbrood - €10,00",
+      menu_desc26: "Tomaat en Knoflook",
+      menu_item27: "Marinara - €9,50",
+      menu_desc27: "Tomaat-Anchovis-Zwarte Olijven-Kappertjes-Oregano",
+      menu_item28: "Margherita - €10,50",
+      menu_desc28: "Tomaat-Mozzarella-Basilicum",
+      menu_item29: "Echte Margherita - €13,50",
+      menu_desc29: "Tomaat-Buffelmozzarella-Basilicum",
+      menu_item30: "Siciliana - €12,00",
+      menu_desc30: "Tomaat-Mozzarella-Anchovis-Kappertjes-Zwarte Olijven-Oregano",
+      menu_item31: "Diavola - €12,00",
+      menu_desc31: "Tomaat-Mozzarella-Pittige Salami",
+      menu_item32: "Prosciutto Cotto - €12,00",
+      menu_desc32: "Tomaat-Mozzarella-Ham",
+      menu_item33: "Ortolana - €13,00",
+      menu_desc33: "Tomaat-Mozzarella-Seizoensgroenten",
+      menu_item34: "Capricciosa - €14,00",
+      menu_desc34: "Tomaat-Mozzarella-Ham-Zwarte Olijven-Champignons-Anchovis-Ei-Peterselie",
+      menu_item35: "4 Seizoenen - €14,00",
+      menu_desc35: "Tomaat-Mozzarella-Ham-Champignons-Artisjokken-Zwarte Olijven",
+      menu_item36: "Calzone - €12,00",
+      menu_desc36: "Tomaat-Mozzarella-Ham",
+      menu_item37: "Calzone Vegetariano - €13,50",
+      menu_desc37: "Tomaat-Mozzarella-Spinazie-Ricotta",
+      menu_item38: "Calzone Farcido - €13,50",
+      menu_desc38: "Tomaat-Mozzarella-Ham-Champignons-Artisjokken",
+      menu_item39: "Disco Volante - €14,00",
+      menu_desc39: "Tomaat-Mozzarella-Ham-Pittige Salami-Champignons",
+      menu_item40: "Parma - €15,00",
+      menu_desc40: "Tomaat-Mozzarella-Parmaham-Rucola-Parmezaan",
+      menu_item41: "Tonno e Cipolle - €12,50",
+      menu_desc41: "Tomaat-Mozzarella-Tonijn-Uien-Peterselie",
+      menu_item42: "Frutti di Mare - €17,00",
+      menu_desc42: "Tomaat-Mozzarella-Zeevruchten-Peterselie",
+      menu_item43: "Jacluska - €13,40",
+      menu_desc43: "Tomaat-Mozzarella-Ham-Champignons-Ananas",
+      menu_item44: "La Parmigiana - €14,00",
+      menu_desc44: "Tomaat-Buffelmozzarella-Aubergine-Parmezaan-Basilicum",
+      menu_item45: "La Vegana - €15,00",
+      menu_desc45: "Vegan Kaas-Tomaat-Aubergine-Espinacas-Uien-Cherrytomaten",
+      menu_item46: "Indiavolata - €14,90",
+      menu_desc46: "Tomaat-Mozzarella-Pittige Salami-Geroosterde Paprika's-Uien-Olijven",
 
 
 
@@ -1057,7 +1568,7 @@
       menu_item12: "Gratinierte Garnelen, serviert mit Wasabi-Mayonnaise - 28,90 €",
       menu_desc12: "",
       menu_item13: "Filet von Wildbarsch alla ligure - 31,50 €",
-      menu_desc13: "(Taggiasche Oliven, Cherrytomaten und Kartoffeln)",
+      menu_desc13: "Taggiasche Oliven, Cherrytomaten und Kartoffeln",
       menu_item14: "Rinderschmorbraten in Rotwein, serviert mit hausgemachten Pappardelle - 25,00 €",
       menu_desc14: "",
       menu_item15: "Gegrilltes Entrecôte mit französischen Schalotten, serviert mit Ofenkartoffeln und Gemüse - 24,50 €",
@@ -1066,6 +1577,73 @@
       btn_pasta: "Hausgemachte Pasta",
       btn_segundos: "Hauptgerichte",
       menu_pasta: "Hausgemachte Pasta",
+      btn_mains: "Bistrot Specials",
+      btn_starters: "Vorspeisen",
+      btn_bianche: "Pizza Bianche",
+      btn_rosse: "Pizza Rosse",
+      menu_item16: "Knoblauchbrot - 10,00 €",
+      menu_desc16: "Knoblauch-Mozzarella-Oregano",
+      menu_item17: "4 Käse - 13,00 €",
+      menu_desc17: "4 Käsesorten Mozzarella-Ziegenkäse-Gorgonzola-Parmesan-Petersilie",
+      menu_item18: "Popay - 13,00 €",
+      menu_desc18: "Mozzarella-Spinat-Ricotta",
+      menu_item19: "Die Bianca - 13,50 €",
+      menu_desc19: "Büffelmozzarella-Cherrytomaten-Basilikum",
+      menu_item20: "Delicata - 15,00 €",
+      menu_desc20: "Mozzarella-Schinken-Artischocken-Zwiebeln-Rucola-Parmesan",
+      menu_item21: "Sempreverde - 15,00 €",
+      menu_desc21: "Mozzarella-Pistaziencreme-Zwiebeln-Speck",
+      menu_item22: "Trufa - 19,50 €",
+      menu_desc22: "Mozzarella-Trüffelcreme-Parmesan-Speck",
+      menu_item23: "Estate - 16,00 €",
+      menu_desc23: "Büffelmozzarella-Cherrytomaten-Zucchini-Pesto-Basilikumöl",
+      menu_item24: "Barbarella - 14,50 €",
+      menu_desc24: "Mozzarella-Ricotta-Scharfe Salami-Parmesan-Zitronenschale-Zwiebeln-Salbei",
+      menu_item25: "Zest - 14,00 €",
+      menu_desc25: "Mozzarella-Ricotta-Scharfe Salami-Parmesan-Zitronenschale-Zwiebeln-Salbei",
+      menu_item26: "Knoblauchbrot - 10,00 €",
+      menu_desc26: "Tomate und Knoblauch",
+      menu_item27: "Marinara - 9,50 €",
+      menu_desc27: "Tomate-Anchovis-Schwarze Oliven-Kapern-Oregano",
+      menu_item28: "Margherita - 10,50 €",
+      menu_desc28: "Tomate-Mozzarella-Basilikum",
+      menu_item29: "Echte Margherita - 13,50 €",
+      menu_desc29: "Tomate-Büffelmozzarella-Basilikum",
+      menu_item30: "Siziliana - 12,00 €",
+      menu_desc30: "Tomate-Mozzarella-Anchovis-Kapern-Schwarze Oliven-Oregano",
+      menu_item31: "Diavola - 12,00 €",
+      menu_desc31: "Tomate-Mozzarella-Scharfe Salami",
+      menu_item32: "Prosciutto Cotto - 12,00 €",
+      menu_desc32: "Tomate-Mozzarella-Schinken",
+      menu_item33: "Ortolana - 13,00 €",
+      menu_desc33: "Tomate-Mozzarella-Saisonales Gemüse",
+      menu_item34: "Capricciosa - 14,00 €",
+      menu_desc34: "Tomate-Mozzarella-Schinken-Schwarze Oliven-Pilze-Anchovis-Ei-Petersilie",
+      menu_item35: "4 Jahreszeiten - 14,00 €",
+      menu_desc35: "Tomate-Mozzarella-Schinken-Pilze-Artischocken-Schwarze Oliven",
+      menu_item36: "Calzone - 12,00 €",
+      menu_desc36: "Tomate-Mozzarella-Schinken",
+      menu_item37: "Calzone Vegetariano - 13,50 €",
+      menu_desc37: "Tomate-Mozzarella-Spinat-Ricotta",
+      menu_item38: "Calzone Farcido - 13,50 €",
+      menu_desc38: "Tomate-Mozzarella-Schinken-Pilze-Artischocken",
+      menu_item39: "Disco Volante - 14,00 €",
+      menu_desc39: "Tomate-Mozzarella-Schinken-Scharfe Salami-Pilze",
+      menu_item40: "Parma - 15,00 €",
+      menu_desc40: "Tomate-Mozzarella-Parmaschinken-Rucola-Parmesan",
+      menu_item41: "Tonno e Cipolle - 12,50 €",
+      menu_desc41: "Tomate-Mozzarella-Thunfisch-Zwiebeln-Petersilie",
+      menu_item42: "Frutti di Mare - 17,00 €",
+      menu_desc42: "Tomate-Mozzarella-Meeresfrüchte-Petersilie",
+      menu_item43: "Jacluska - 13,40 €",
+      menu_desc43: "Tomate-Mozzarella-Schinken-Pilze-Ananas",
+      menu_item44: "La Parmigiana - 14,00 €",
+      menu_desc44: "Tomate-Büffelmozzarella-Aubergine-Parmesan-Basilikum",
+      menu_item45: "La Vegana - 15,00 €",
+      menu_desc45: "Vegankäse-Tomate-Aubergine-Spinat-Zwiebeln-Cherrytomaten",
+      menu_item46: "Indiavolata - 14,90 €",
+      menu_desc46: "Tomate-Mozzarella-Scharfe Salami-Röstpaprika-Zwiebeln-Oliven",
+
 
 
 
@@ -1137,7 +1715,7 @@
       menu_item12: "Gamberoni gratinati, serviti con maionese al wasabi - 28,90€",
       menu_desc12: "",
       menu_item13: "Filetto di branzino selvaggio alla ligure - 31,50€",
-      menu_desc13: "(olive taggiasche, pomodorini e patate)",
+      menu_desc13: "olive taggiasche, pomodorini e patate",
       menu_item14: "Stufato di manzo al vino rosso servito con Pappardelle fatta in casa - 25,00€",
       menu_desc14: "",
       menu_item15: "Entrecôte alla griglia con scalogni alla francese, servita con patate al forno e verdure - 24,50€",
@@ -1146,6 +1724,73 @@
       btn_pasta: "Pasta fatta in casa",
       btn_segundos: "Portate principali",
       menu_pasta: "Pasta fatta in casa",
+      btn_mains: "Specialità Bistrot",
+      btn_starters: "Antipasti",
+      btn_bianche: "Pizze Bianche",
+      btn_rosse: "Pizze Rosse",
+      menu_item16: "Pane all'aglio - 10,00€",
+      menu_desc16: "Aglio-Mozzarella-Oregano",
+      menu_item17: "4 Formaggi - 13,00€",
+      menu_desc17: "4 formaggi Mozzarella-Capra-Gorgonzola-Parmigiano-Petrosillia",
+      menu_item18: "Popay - 13,00€",
+      menu_desc18: "Mozzarella-Spinaci-Ricotta",
+      menu_item19: "La Bianca - 13,50€",
+      menu_desc19: "Mozzarella di bufala-Pomodorini-Basilico",
+      menu_item20: "Delicata - 15,00€",
+      menu_desc20: "Mozzarella-Provolone-Carciofi-Cipolla-Rucola-Parmigiano",
+      menu_item21: "Sempreverde - 15,00€",
+      menu_desc21: "Mozzarella-Crema di Pistacchio-Cipolla-Speck",
+      menu_item22: "Trufa - 19,50€",
+      menu_desc22: "Mozzarella-Crema di Tartufo-Parmigiano-Speck",
+      menu_item23: "Estate - 16,00€",
+      menu_desc23: "Mozzarella di bufala-Pomodorini-Zucchine-Pesto-Olio di Basilico",
+      menu_item24: "Barbarella - 14,50€",
+      menu_desc24: "Mozzarella-Ricotta-Salami Piccante-Parmigiano-Scorza di Limone-Cipolla-Salvia",
+      menu_item25: "Zest - 14,00€",
+      menu_desc25: "Mozzarella-Ricotta-Salami Piccante-Parmigiano-Scorza di Limone-Cipolla-Salvia",
+      menu_item26: "Pane all'aglio - 10,00€",
+      menu_desc26: "Pomodoro e Aglio",  
+      menu_item27: "Marinara - 9,50€",
+      menu_desc27: "Pomodoro-Acciughe-Oliva Nera-Capperi-Oregano",
+      menu_item28: "Margherita - 10,50€",
+      menu_desc28: "Pomodoro-Mozzarella-Basilico",
+      menu_item29: "Margherita Vera - 13,50€",
+      menu_desc29: "Pomodoro-Mozzarella di bufala-Basilico",
+      menu_item30: "Siciliana - 12,00€",
+      menu_desc30: "Pomodoro-Mozzarella-Acciughe-Capperi-Oliva Nera-Oregano",
+      menu_item31: "Diavola - 12,00€",
+      menu_desc31: "Pomodoro-Mozzarella-Salami Piccante",
+      menu_item32: "Prosciutto Cotto - 12,00€",
+      menu_desc32: "Pomodoro-Mozzarella-Provolone",
+      menu_item33: "Ortolana - 13,00€",
+      menu_desc33: "Pomodoro-Mozzarella-Verdure di stagione",
+      menu_item34: "Capricciosa - 14,00€",
+      menu_desc34: "Pomodoro-Mozzarella-Provolone-Oliva Nera-Funghi-Acciughe-Uovo-Petrosillia",
+      menu_item35: "4 Stagioni - 14,00€",
+      menu_desc35: "Pomodoro-Mozzarella-Provolone-Funghi-Carciofi-Oliva Nera",
+      menu_item36: "Calzone - 12,00€",
+      menu_desc36: "Pomodoro-Mozzarella-Provolone",
+      menu_item37: "Calzone Vegetariano - 13,50€",
+      menu_desc37: "Pomodoro-Mozzarella-Spinaci-Ricotta",
+      menu_item38: "Calzone Farcido - 13,50€",
+      menu_desc38: "Pomodoro-Mozzarella-Provolone-Funghi-Carciofi",
+      menu_item39: "Disco Volante - 14,00€",
+      menu_desc39: "Pomodoro-Mozzarella-Provolone-Salami Piccante-Funghi",
+      menu_item40: "Parma - 15,00€",
+      menu_desc40: "Pomodoro-Mozzarella-Provolone di Parma-Rucola-Parmigiano",
+      menu_item41: "Tonno e Cipolle - 12,50€",
+      menu_desc41: "Pomodoro-Mozzarella-Tonno-Cipolla-Petrosillia",
+      menu_item42: "Frutti di Mare - 17,00€",
+      menu_desc42: "Pomodoro-Mozzarella-Frutti di Mare-Petrosillia",
+      menu_item43: "Jacluska - 13,40€",
+      menu_desc43: "Pomodoro-Mozzarella-Provolone-Funghi-Ananas",
+      menu_item44: "La Parmigiana - 14,00€",
+      menu_desc44: "Pomodoro-Mozzarella di bufala-Melanzane-Parmigiano-Basilico",
+      menu_item45: "La Vegana - 15,00€",
+      menu_desc45: "Formaggio vegano-Pomodoro-Melanzane-Espinacas-Cipolla-Pomodorini",
+      menu_item46: "Indiavolata - 14,90€",
+      menu_desc46: "Pomodoro-Mozzarella-Salami Piccante-Peperoni Arrosto-Cipolla-Oliva Nera",
+
 
 
     }
