@@ -263,7 +263,6 @@
 }
 .nom-restaurant {
   font-family: "Dancing Script", serif;
- 
 }
 
 /* Responsive */
@@ -296,7 +295,7 @@
     
 
     .swiper {
-      height: auto;
+      height: 100vh;
     }
 
     .swiper-slide {
@@ -315,7 +314,7 @@
     }
 
     .slide-content h1 {
-      font-size: 7rem;
+      font-size: 4rem;
       letter-spacing: 2px;
     }
 
@@ -337,7 +336,6 @@
     }
     </style>
   </head>
-  
   <body>
  <div class="swiper">
     <div class="swiper-wrapper">
@@ -346,63 +344,33 @@
           <div class="nom-restaurant">
      
           <p> </p>
-          <h1><b>Bistrò 17</b></h1>
-          <p>Santa Eulalia</p>
-            </div>
-        </div>
-      </div>
-     
-      
-            <div class="swiper-slide" style="background-image: url('table.JPG')">
-        <div class="slide-content">
-          <div class="nom-restaurant">
-     
-          <p> </p>
-          <h1><b>Bistrò 17</b></h1>
-          <p>Santa Eulalia</p>
-            </div>
-        </div>
-      </div>
-    
-          <div class="swiper-slide" style="background-image: url('Tiramisu-cafe.JPG')">
-        <div class="slide-content">
-          <div class="nom-restaurant">
-     
-          <p> </p>
-          <h1><b></b>Bistrò 17</b></h1>
-          <p>Santa Eulalia</p>
-            </div>
-        </div>
-      </div>  
-      
-      
-    
-          <div class="swiper-slide" style="background-image: url('bar.JPG')">
-        <div class="slide-content">
-          <div class="nom-restaurant">
-     
-          <p> </p>
           <h1><b></b>Bistrò 17</b></h1>
           <p>Santa Eulalia</p>
             </div>
         </div>
       </div>
-      
-           <div class="swiper-slide" style="background-image: url('entree.JPG')">
-        <div class="slide-content">
-          <div class="nom-restaurant">
      
-          <p> </p>
-          <h1><b></b>Bistrò 17</b></h1>
-          <p>Santa Eulalia</p>
-            </div>
-        </div>
+      
+      <div class="swiper-slide" style="background-image: url('table.JPG')">
+        <div class="slide-content"></div>
+      </div>
+      <div class="swiper-slide" style="background-image: url('Tiramisu-cafe.JPG')">
+        <div class="slide-content"></div>
+      </div>
+        <div class="swiper-slide" style="background-image: url('resto.JPG')">
+        <div class="slide-content"></div>
+      </div>
+        <div class="swiper-slide" style="background-image: url('bar.JPG')">
+        <div class="slide-content"></div>
+      </div>
+        <div class="swiper-slide" style="background-image: url('entree.JPG')">
+        <div class="slide-content"></div>
       </div>
     </div>
-    
-
+ </div>
     <!-- Pagination -->
     <div class="swiper-pagination"></div>
+  </div>
     <!-- Header -->
   <header>
     <h1 data-i18n="site_title">Bistrò 17 Santa Eulalia</h1>
@@ -891,7 +859,6 @@
       </form>
       
     </section>
-    
 
     <script>
       function scrollToSection(id) {
@@ -1895,7 +1862,22 @@
       }
       
     </style>
-
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      effect: 'fade',
+      speed: 1000,
+    });
+  </script>
     
 <script>
   function openModal(img) {
@@ -1909,21 +1891,3 @@
     document.getElementById("modal").style.display = "none";
   }
 </script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-  const swiper = new Swiper('.swiper', {
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    effect: 'fade', // tu peux aussi tester 'slide', 'cube', etc.
-    speed: 800,
-  });
-</script>
-
-
