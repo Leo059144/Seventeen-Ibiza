@@ -17,7 +17,6 @@
          font-family: 'Cormorant Garamond', serif;
         margin: 0;
         padding: 0;
-        overflow: auto;
         
         
       }
@@ -338,6 +337,7 @@
     }
     </style>
   </head>
+  
   <body>
  <div class="swiper">
     <div class="swiper-wrapper">
@@ -398,6 +398,7 @@
             </div>
         </div>
       </div>
+    </div>
     
 
     <!-- Pagination -->
@@ -891,6 +892,7 @@
       </form>
       
     </section>
+    
 
     <script>
       function scrollToSection(id) {
@@ -1894,22 +1896,7 @@
       }
       
     </style>
-     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper('.swiper', {
-      loop: true,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      effect: 'fade',
-      speed: 1000,
-    });
-  </script>
+
     
 <script>
   function openModal(img) {
@@ -1923,3 +1910,21 @@
     document.getElementById("modal").style.display = "none";
   }
 </script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    effect: 'fade', // tu peux aussi tester 'slide', 'cube', etc.
+    speed: 800,
+  });
+</script>
+
+
